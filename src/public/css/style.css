@@ -195,3 +195,15 @@ width: 100%; /* Mantiene el subrayado */
 .nav-link.new-style::after {
     background-color: #ff6a00; /* Color del subrayado */
 }
+
+.btn.sky-gradient {
+    background-color: #2384A3;
+    border: 1px solid white;
+    transition: background 0.5s ease;
+  }
+  
+  /* Hover effect with gradient */
+  .btn.sky-gradient:hover {
+    background: linear-gradient(90deg, #4DB8FF, #87CEEB, #ADD8E6, #B0E0E6);
+    border-color: white;
+  }
