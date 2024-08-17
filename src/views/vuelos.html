@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="src/public/css/style.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <title>Air-Plan</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <img style="border-radius: 50%; margin-right: .5rem;" src="src/public/img/Logo.png" alt="" width="50" height="50" 
+                    <img style="border-radius: 50%; margin-right: .5rem;" src="../public/img/Logo.png" alt="" width="50" height="50" 
                         class="d-inline-block">
                     <span style="color: #0557d3;">Air</span>
                     <span style="color: #ff6a00;">Plan</span>
@@ -74,9 +75,9 @@
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">
-                            <svg class="svgTittles" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
-                                <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
-                                <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
+                            <svg class="svgTittles" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-buildings" viewBox="0 0 16 16">
+                                <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"/>
+                                <path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"/>
                               </svg>
                             Hospedaje
                         </a>
@@ -110,159 +111,188 @@
             </div>
         </div>
         <br> <br>
-        <div class="row justify-content-center">
-            <div class="col-8">
-                <div class="input-group-custom">
-                    <input type="text" class="form-control form-control-custom" placeholder="¿A donde vamos?">
-                    <button class="input-group-btn">
-                        <a href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-globe-americas" viewBox="0 0 16 16">
-                                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
-                              </svg>
-                        </a>
-                    </button>
+        <div class="container mt-5">
+            <div class="row bg-light py-3 px-4 rounded-pill align-items-center shadow-sm">
+                <!-- Sección 1: Origen -->
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-2 mb-md-0">
+                    <button class="btn btn-primary w-100 rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Origen
+                      </button>
+                    <div class="dropdown-menu text-muted" style="max-width: 350px;">
+                        <div class="vertical-scroll">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                                        <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+                                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
+                                    </svg>
+                                    <p class="mb-1" style="margin-right: 2rem;">Buenos Aires, Argentina</p>
+                                    <small class="text-muted">BUE</small>
+                                </div>
+                                <small class="text-muted">Todos los aeropuertos</small>
+                                <a href="#" class="list-group-item">
+                                    <div class="d-flex w-100 justify-content-between" style="margin-left: 1rem;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                                            <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599"/>
+                                          </svg>
+                                        <p class="mb-1">Ministro Pistarini Ezeiza</p>
+                                        <small class="text-muted">EZE</small>
+                                    </div>
+                                    <small class="text-muted">Buenos Aires, Argentina</small>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="d-flex w-100 justify-content-between" style="margin-left: 1rem;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                                            <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599"/>
+                                          </svg>
+                                        <p class="mb-1">Aeroparque Jorge Newbery</p>
+                                        <small class="text-muted">AEP</small>
+                                    </div>
+                                    <small class="text-muted">Buenos Aires, Argentina</small>
+                                </a>
+                            </a>  
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                                        <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599"/>
+                                      </svg>
+                                    <p class="mb-1" style="margin-right: 2rem;">Cordoba, Argentina</p>
+                                    <small class="text-muted">COR</small>
+                                </div>
+                                <small class="text-muted">Aeropuerto Ingeniero Ambrosio Taravella</small>
+                            </a>
+                        </div>
+                        
+                    </div>
+                      
+                    
+                    
                 </div>
-                <br>
+                <!-- Sección 2: Destino -->
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-2 mb-md-0">
+                    <button class="btn btn-primary w-100 rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Destino
+                      </button>
+                    <div class="dropdown-menu text-muted" style="max-width: 350px;">
+                        <div class="vertical-scroll">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                                        <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+                                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
+                                    </svg>
+                                    <p class="mb-1" style="margin-right: 2rem;">Buenos Aires, Argentina</p>
+                                    <small class="text-muted">BUE</small>
+                                </div>
+                                <small class="text-muted">Todos los aeropuertos</small>
+                                <a href="#" class="list-group-item">
+                                    <div class="d-flex w-100 justify-content-between" style="margin-left: 1rem;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                                            <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599"/>
+                                          </svg>
+                                        <p class="mb-1">Ministro Pistarini Ezeiza</p>
+                                        <small class="text-muted">EZE</small>
+                                    </div>
+                                    <small class="text-muted">Buenos Aires, Argentina</small>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="d-flex w-100 justify-content-between" style="margin-left: 1rem;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                                            <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599"/>
+                                          </svg>
+                                        <p class="mb-1">Aeroparque Jorge Newbery</p>
+                                        <small class="text-muted">AEP</small>
+                                    </div>
+                                    <small class="text-muted">Buenos Aires, Argentina</small>
+                                </a>
+                            </a>  
+                            <a href="#" class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16">
+                                        <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599"/>
+                                      </svg>
+                                    <p class="mb-1" style="margin-right: 2rem;">Cordoba, Argentina</p>
+                                    <small class="text-muted">COR</small>
+                                </div>
+                                <small class="text-muted">Aeropuerto Ingeniero Ambrosio Taravella</small>
+                            </a>
+                        </div>
+                        
+                    </div>
+                      
+                    
+                    
+                </div>
+                <!-- Sección 3: Fecha de Ida -->
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-2 mb-md-0">
+                    <input type="text" class="form-control custom-date-picker" placeholder="Fecha de Ida" id="date-picker">
+                </div>
+                <!-- Sección 4: Fecha de Vuelta -->
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-2 mb-md-0">
+                    <input type="text" class="form-control custom-date-picker" placeholder="Fecha de vuelta" id="date-picker">
+                </div>
+                <!-- Sección 5: Cantidad de Pasajeros -->
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-2 mb-md-0">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-secondary dropdown-toggle w-100" type="button" id="passengerDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pasajeros
+                        </button>
+                        <ul class="dropdown-menu p-3" aria-labelledby="passengerDropdown">
+                            <li class="mb-2">
+                                <label for="adults">Adultos:</label>
+                                <input type="number" id="adults" class="form-control" value="1" min="1" max="10">
+                            </li>
+                            <li class="mb-2">
+                                <label for="children">Niños:</label>
+                                <input type="number" id="children" class="form-control" value="0" min="0" max="10">
+                            </li>
+                            <li class="mb-2">
+                                <label for="infants">Bebés:</label>
+                                <input type="number" id="infants" class="form-control" value="0" min="0" max="5">
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="economyClass" checked>
+                                    <label class="form-check-label" for="economyClass">
+                                        Económica
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="premiumClass">
+                                    <label class="form-check-label" for="premiumClass">
+                                        Premium
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="businessClass">
+                                    <label class="form-check-label" for="businessClass">
+                                        Ejecutiva
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="firstClass">
+                                    <label class="form-check-label" for="firstClass">
+                                        Primera Clase
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Sección 6: Botón Buscar -->
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-2 mb-md-0">
+                    <button class="btn btn-primary w-100 rounded-pill">Buscar</button>
+                </div>
             </div>
         </div>
-        <div class="container" style="border-radius: 10px; background-color: #fff;">
-            <div class="row justify-content-center">
-                <div class="col-10 col-md-8 col-lg-6">
-                    <div class="container mt-5">
-                        <div class="fs-5 mb-3 text-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-hourglass-bottom" viewBox="0 0 16 16">
-                                <path d="M2 1.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1-.5-.5m2.5.5v1a3.5 3.5 0 0 0 1.989 3.158c.533.256 1.011.791 1.011 1.491v.702s.18.149.5.149.5-.15.5-.15v-.7c0-.701.478-1.236 1.011-1.492A3.5 3.5 0 0 0 11.5 3V2z"></path>
-                            </svg>
-                            ¿Cuánto tiempo viajas?
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">Un año</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault2">
-                            <label class="form-check-label" for="flexRadioDefault1">Un mes</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault3">
-                            <label class="form-check-label" for="flexRadioDefault1">15 días</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault4" checked>
-                            <label class="form-check-label" for="flexRadioDefault1">Una semana</label>
-                        </div>
-                        <div class="form-floating mb-3 mt-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="">
-                            <label for="floatingInput">Tiempo exacto</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-10 col-md-8 col-lg-6">
-                    <div class="container mt-5">
-                        <div class="fs-5 mb-3 text-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-piggy-bank-fill" viewBox="0 0 16 16">
-                                <path d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069q0-.218-.02-.431c.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a1 1 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.74.74 0 0 0-.375.562c-.024.243.082.48.32.654a2 2 0 0 1-.259.101c-.134-2.888-3.061-5.215-6.504-5.215z"/>
-                            </svg>
-                            ¿Qué presupuesto manejas?
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault9">
-                            <label class="form-check-label" for="flexRadioDefault2">Ejecutivo</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault9">
-                            <label class="form-check-label" for="flexRadioDefault2">Premium</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault10">
-                            <label class="form-check-label" for="flexRadioDefault2">Moderado</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault11" checked>
-                            <label class="form-check-label" for="flexRadioDefault2">Económico</label>
-                        </div>
-                        <div class="form-floating mb-3 mt-3">
-                            <input type="text" class="form-control" id="floatingInput3" placeholder="">
-                            <label for="floatingInput3">Presupuesto exacto</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-10 col-md-8 col-lg-6">
-                    <div class="container mt-5">
-                        <div class="fs-5 mb-3 text-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark-star-fill" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5M8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.18.18 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.18.18 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.18.18 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.18.18 0 0 1-.134-.098z"/>
-                            </svg>
-                            ¿Qué tipo de viaje quieres hacer?
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault5">
-                            <label class="form-check-label" for="flexRadioDefault3">Relax</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault6">
-                            <label class="form-check-label" for="flexRadioDefault3">Aventura</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault7">
-                            <label class="form-check-label" for="flexRadioDefault3">Romántico</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault3" id="flexRadioDefault8" checked>
-                            <label class="form-check-label" for="flexRadioDefault3">Familiar</label>
-                        </div>
-                        <div class="form-floating mb-3 mt-3">
-                            <input type="text" class="form-control" id="floatingInput2" placeholder="">
-                            <label for="floatingInput2">Tipo de viaje</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-10 col-md-8 col-lg-6">
-                    <div class="container mt-5">
-                        <div class="fs-5 mb-3 text-start">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-walking" viewBox="0 0 16 16">
-                                <path d="M9.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0M6.44 3.752A.75.75 0 0 1 7 3.5h1.445c.742 0 1.32.643 1.243 1.38l-.43 4.083a1.8 1.8 0 0 1-.088.395l-.318.906.213.242a.8.8 0 0 1 .114.175l2 4.25a.75.75 0 1 1-1.357.638l-1.956-4.154-1.68-1.921A.75.75 0 0 1 6 8.96l.138-2.613-.435.489-.464 2.786a.75.75 0 1 1-1.48-.246l.5-3a.75.75 0 0 1 .18-.375l2-2.25Z"/>
-                                <path d="M6.25 11.745v-1.418l1.204 1.375.261.524a.8.8 0 0 1-.12.231l-2.5 3.25a.75.75 0 1 1-1.19-.914zm4.22-4.215-.494-.494.205-1.843.006-.067 1.124 1.124h1.44a.75.75 0 0 1 0 1.5H11a.75.75 0 0 1-.531-.22Z"/>
-                              </svg>
-                            Intensidad del viaje
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault5">
-                            <label class="form-check-label" for="flexRadioDefault4">Muchas actividades</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault6">
-                            <label class="form-check-label" for="flexRadioDefault4">Poco pero intenso</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault7">
-                            <label class="form-check-label" for="flexRadioDefault4">Normal</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault4" id="flexRadioDefault8" checked>
-                            <label class="form-check-label" for="flexRadioDefault4">Pocas actividades</label>
-                        </div>
-                        <div class="form-floating mb-3 mt-3">
-                            <input type="text" class="form-control" id="floatingInput2" placeholder="">
-                            <label for="floatingInput2">Cantidad de actividades</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 text-center">
-                    <br>
-                    <button class="btn btn-primary btn-lg px-4 py-3">
-                        Continuar 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-airplane" viewBox="0 0 16 16" transform="rotate(90)">
-                            <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599"/>
-                          </svg>
-                    </button>
-                </div>
-            </div>
+        
+        <br> <br>
+        <div class="container" style="border-radius: 10px; background-color: #fff;">                
             <br>
             <div class="row">
                 <div class="col d-flex justify-content-center">
                     <div class="card circular-card">
-                        <img src="./src/public/img/des1.jpg" class="card-img-top">
+                        <img src="../public/img/des1.jpg" class="card-img-top">
                         <div class="card-body">
                             <h1>Punta Cana</h1>
                             <p>Desde Buenos Aires</p>
@@ -273,7 +303,7 @@
                 </div>
                 <div class="col d-flex justify-content-center">
                     <div class="card circular-card">
-                        <img src="./src/public/img/des2.jpg" class="card-img-top">
+                        <img src="../public/img/des2.jpg" class="card-img-top">
                         <div class="card-body">
                             <h1>Madrid</h1>
                             <p>Desde Buenos Aires</p>
@@ -284,7 +314,7 @@
                 </div>
                 <div class="col d-flex justify-content-center">
                     <div class="card circular-card">
-                        <img src="./src/public/img/des3.jpg" class="card-img-top">
+                        <img src="../public/img/des3.jpg" class="card-img-top">
                         <div class="card-body">
                             <h1>San Carlos de Bariloche</h1>
                             <p>Desde Buenos Aires</p>
@@ -295,7 +325,7 @@
                 </div>
                 <div class="col d-flex justify-content-center">
                     <div class="card circular-card">
-                        <img src="./src/public/img/des4.jpg" class="card-img-top">
+                        <img src="../public/img/des4.jpg" class="card-img-top">
                         <div class="card-body">
                             <h1>Cancún</h1>
                             <p>Desde Buenos Aires</p>
@@ -308,7 +338,7 @@
             <div class="row">
                 <div class="col d-flex justify-content-center">
                     <div class="card circular-card">
-                        <img src="./src/public/img/des5.png" class="card-img-top">
+                        <img src="../public/img/des5.png" class="card-img-top">
                         <div class="card-body">
                             <h1>Río de Janeiro</h1>
                             <p>Desde Buenos Aires</p>
@@ -319,7 +349,7 @@
                 </div>
                 <div class="col d-flex justify-content-center">
                     <div class="card circular-card">
-                        <img src="./src/public/img/des6.jpeg" class="card-img-top">
+                        <img src="../public/img/des6.jpeg" class="card-img-top">
                         <div class="card-body">
                             <h1>Hawai</h1>
                             <p>Desde Buenos Aires</p>
@@ -330,7 +360,7 @@
                 </div>
                 <div class="col d-flex justify-content-center">
                     <div class="card circular-card">
-                        <img src="./src/public/img/des7.jpg" class="card-img-top">
+                        <img src="../public/img/des7.jpg" class="card-img-top">
                         <div class="card-body">
                             <h1>Amsterdam</h1>
                             <p>Desde Buenos Aires</p>
@@ -341,7 +371,7 @@
                 </div>
                 <div class="col d-flex justify-content-center">
                     <div class="card circular-card">
-                        <img src="./src/public/img/des8.jpg" class="card-img-top">
+                        <img src="../public/img/des8.jpg" class="card-img-top">
                         <div class="card-body">
                             <h1>Ibiza</h1>
                             <p>Desde Buenos Aires</p>
@@ -354,6 +384,13 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        flatpickr("#date-picker", {
+    dateFormat: "Y-m-d",
+    locale: "es", // Puedes cambiar el locale según tus necesidades
+});
+    </script>
 </body>
 </html>

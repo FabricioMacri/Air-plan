@@ -155,7 +155,7 @@ body {
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: #ff6a00;
+    background-color: #F28A1D;
     left: 0;
     bottom: -2px;
     transition: width 0.3s ease;
@@ -164,7 +164,7 @@ body {
 .nav-link:hover,
 .nav-link:focus,
 .nav-link.active {
-    color: #ff6a00;
+    color: #F28A1D;
 }
 
 .nav-link:hover::after,
@@ -175,7 +175,7 @@ body {
 width: 100%; /* Esto mantiene el subrayado completo */
 }
 .nav-link.active {
-color: #ff6a00; /* Cambia el color del texto */
+color: #F28A1D; /* Cambia el color del texto */
 }
 
 .nav-link.active::after {
@@ -183,21 +183,21 @@ width: 100%; /* Mantiene el subrayado */
 }
 
 .nav-link.new-style {
-    color: #d47171; /* Color inicial del texto */
+    color: #F28A1D; /* Color inicial del texto */
 }
 
 .nav-link.new-style:hover,
 .nav-link.new-style:focus,
 .nav-link.new-style.active {
-    color: #ff6a00; /* Color al hacer hover y cuando está activo */
+    color: #F28A1D; /* Color al hacer hover y cuando está activo */
 }
 
 .nav-link.new-style::after {
-    background-color: #ff6a00; /* Color del subrayado */
+    background-color: #F28A1D; /* Color del subrayado */
 }
 
 .btn.sky-gradient {
-    background-color: #2384A3;
+    background-color: #284A9A;
     border: 1px solid white;
     transition: background 0.5s ease;
   }
@@ -207,3 +207,126 @@ width: 100%; /* Mantiene el subrayado */
     background: linear-gradient(90deg, #4DB8FF, #87CEEB, #ADD8E6, #B0E0E6);
     border-color: white;
   }
+
+  .cylinder-container {
+    background-color: #F5F5F5; /* Usa el color "Azul Profundo" */
+    border-radius: 50px; /* Redondea los bordes */
+    width: 100%;
+    height: 100px; /* Altura fija */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  /* Estilos para el contenedor del dropdown */
+  .vertical-scroll::-webkit-scrollbar {
+    width: 1em;
+    height: 0.5em;
+  }
+  
+  .vertical-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 100vw;
+    margin-block: 0.5em;
+  }
+  
+  .vertical-scroll::-webkit-scrollbar-thumb {
+    background: #888;
+    border: 0.25em solid #f1f1f1;
+    border-radius: 100vw;
+  }
+  
+  .vertical-scroll::-webkit-scrollbar-thumb:hover {
+    background: #888
+  }
+  
+  /* Vertical scrolling */
+  
+  .vertical-scroll {
+    display: grid;
+    padding: 0.5em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 1em;
+    position: relative;
+    max-height: 250px;
+    margin: 0px;
+  }
+  
+  .vertical-scroll > div {
+    background: hsl(0 0% 90%);
+    border-radius: 1em;
+    border: 0.5em solid hsl(0 0% 60%);
+    padding: 1em;
+  }
+
+  .custom-date-picker {
+    border: 2px solid #2384A3; /* Color del borde */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño del texto */
+    background-color: #f9f9f9; /* Color de fondo */
+    transition: all 0.3s ease; /* Transición suave para cambios de estado */
+}
+
+/* Cambia el estilo cuando el input está en foco */
+.custom-date-picker:focus {
+    border-color: #41638D; /* Color del borde en foco */
+    box-shadow: 0 0 8px rgba(65, 99, 141, 0.5); /* Sombra alrededor del borde */
+    outline: none; /* Quita el borde de enfoque predeterminado */
+}
+
+/* Estilo del placeholder */
+.custom-date-picker::placeholder {
+    color: #888; /* Color del texto del placeholder */
+}
+
+/* Estilo del texto dentro del input */
+.custom-date-picker {
+    color: #333; /* Color del texto */
+}
+.flatpickr-calendar {
+    border: 2px solid #2384A3; /* Color del borde del calendario */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Color de fondo del calendario */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra alrededor del calendario */
+}
+
+/* Estilo para los días seleccionados */
+.flatpickr-day.selected,
+.flatpickr-day.selected.today {
+    background-color: #2384A3; /* Color de fondo del día seleccionado */
+    color: #fff; /* Color del texto del día seleccionado */
+    border-radius: 4px; /* Bordes redondeados para el día seleccionado */
+}
+
+/* Estilo para los días en el mes actual */
+.flatpickr-day {
+    color: #333; /* Color del texto de los días */
+}
+
+/* Estilo para los días del mes anterior y siguiente */
+.flatpickr-day.inRange,
+.flatpickr-day.nextMonthDay,
+.flatpickr-day.prevMonthDay {
+    color: #888; /* Color de los días de otros meses */
+}
+
+/* Estilo para el encabezado del calendario */
+.flatpickr-header {
+    background-color: #41638D; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+}
+
+/* Estilo para los botones de navegación del calendario */
+.flatpickr-prev-month,
+.flatpickr-next-month {
+    color: #fff; /* Color de los botones de navegación */
+}
+
+/* Estilo para los botones de hoy y de selección */
+.flatpickr-day.today {
+    border: 2px solid #2384A3; /* Borde alrededor del día de hoy */
+}
