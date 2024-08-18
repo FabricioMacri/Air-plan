@@ -183,7 +183,7 @@ width: 100%; /* Mantiene el subrayado */
 }
 
 .nav-link.new-style {
-    color: #F28A1D; /* Color inicial del texto */
+    color: #41638D; /* Color inicial del texto */
 }
 
 .nav-link.new-style:hover,
@@ -329,4 +329,14 @@ width: 100%; /* Mantiene el subrayado */
 /* Estilo para los botones de hoy y de selección */
 .flatpickr-day.today {
     border: 2px solid #2384A3; /* Borde alrededor del día de hoy */
+}
+
+.position-relative {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.form-check-input {
+    transform: translate(-50%, -70%);
 }
