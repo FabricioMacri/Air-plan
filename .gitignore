@@ -1,2 +1,4 @@
 /package.json
 /prueba.html
+/node_modules
+/.env.desarrollo
